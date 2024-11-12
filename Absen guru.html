@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Guru SMK Negeri 2 Bangkalan</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <img src="SMKN-2-BANGKALAN.png" alt="Logo" class="logo">
+        <h1>Absensi Guru SMK Negeri 2 Bangkalan</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Absensi Harian Guru</h2>
+            <form class="attendance-form">
+                <label for="teacher-id">ID Guru:</label>
+                <input type="text" id="teacher-id" name="teacher-id" required>
+
+                <label for="teacher-name">Nama Guru:</label>
+                <input type="text" id="teacher-name" name="teacher-name" required>
+
+                <label for="subject">Mata Pelajaran:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="attendance-date">Tanggal Absensi:</label>
+                <input type="date" id="attendance-date" name="attendance-date" required>
+
+                <label for="check-in">Jam Kehadiran (Check-in):</label>
+                <input type="time" id="check-in" name="check-in" required>
+
+                <label for="check-out">Jam Pulang (Check-out):</label>
+                <input type="time" id="check-out" name="check-out">
+
+                <label for="status">Status Kehadiran:</label>
+                <select id="status" name="status">
+                    <option value="hadir">Hadir</option>
+                    <option value="terlambat">Terlambat</option>
+                    <option value="izin">Izin</option>
+                    <option value="sakit">Sakit</option>
+                    <option value="tidak hadir">Tidak Hadir</option>
+                </select>
+
+                <label for="notes">Catatan:</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Tambahkan catatan jika ada"></textarea>
+
+                <button type="submit">Simpan Absensi</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
